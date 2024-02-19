@@ -1,5 +1,6 @@
 def f(x):
     return x**2 +2*x-13
+
 x = 3 
 delta_x = 0.01
 
