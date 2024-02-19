@@ -1,0 +1,31 @@
+def P(x):
+    y = x**3 + 3*x**2-x-3
+    return y
+def derivert():
+    delta_x = 0.1
+    derivert = ((P(x+delta_x)-P(x-delta_x))/(2*delta_x))
+
+    return derivert
+
+for i in range(-10, 11):
+    if P(i) == 0:
+        if i < 0:
+            print(f"En faktor er x + {abs(i)}")  
+        elif i == 0:
+            print("En faktor er x")  
+        else:
+            print(f"En faktor er x - {abs(i)}")  
+
+#forbedret 
+print("next")
+def P(x):
+    y = x**3 + 3*x**2-x-3
+    return y
+x = -10
+dx = 0.001
+while P(x) < 11:
+    if P(x)*P(x-dx) < 0:
+        print(round(x,1))
+    elif derivert(P(x)) == 0:
+        print(round(x,1))
+    x+=dx

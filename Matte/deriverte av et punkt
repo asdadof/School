@@ -1,0 +1,45 @@
+def f(x):
+    return x**2 +2*x-13
+x = 3 
+delta_x = 0.01
+
+derivert = ((f(x+delta_x)-f(x-delta_x))/(2*delta_x))
+
+print("f derivert av 3 = ", derivert)
+
+
+
+
+def f(x):
+    return x**4 - 3*x**3 + 2*x - 1
+x = 3 
+delta_x = 0.1
+
+derivert = ((f(x+delta_x)-f(x-delta_x))/(2*delta_x))
+
+print("f derivert av 3 = ", derivert)
+
+
+
+
+def f(x):
+    return x**5 - 3*x**3 + x
+x = 3 
+delta_x = 0.1
+
+derivert = ((f(x+delta_x)-f(x-delta_x))/(2*delta_x))
+
+print("f derivert av 3 = ", derivert)
+
+
+
+
+
+def f(x):
+    return x**4 - 3*x**3 + 2*x - 1
+x = 3 
+delta_x = 0.1
+
+derivert = ((f(x+delta_x)-f(x-delta_x))/(2*delta_x))
+
+print("f derivert av 3 = ", derivert)
